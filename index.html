@@ -90,7 +90,7 @@ function welcome(){
  render(`<h1>Missão<br><em>DiTech</em></h1><div class="tag">CIÊNCIA, TECNOLOGIA E SAÚDE</div>
  <p style="font-size:20px;margin:0">Quanto vale a tua <b style="color:var(--teal)">Saúde Digital</b>?</p>
  <div class="card"><label for="code">O teu código de participante</label>
- <input id="code" type="text" autocomplete="off" autocapitalize="characters" placeholder="ex.: DT-023">
+ <input id="code" type="text" autocomplete="off" autocapitalize="characters" placeholder="Usa a incial do 1º nome e do último apelido seguido do ano de nascimento. Ex.: NI2026">
  <label class="chk" style="margin-top:16px"><input id="cons" type="checkbox"><span>Aceito participar e que as minhas respostas e medições sejam registadas para fins do projeto. A pontuação é lúdica e <b>não é um diagnóstico</b>.</span></label>
  <button class="btn" id="go" disabled>Começar a missão</button></div>`);
  const chk=()=>$("go").disabled=!($("code").value.trim()&&$("cons").checked);
